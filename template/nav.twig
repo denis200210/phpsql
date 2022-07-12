@@ -1,0 +1,11 @@
+{% extends "index.twig" %}
+{% block title %}Chat{% endblock %}
+{% block messanger %}
+    <div id="messanger">
+        {% for mess in messs %} //поменять 
+            <div class="mess">
+                "<em>{{menu.login}}"</em>.<strong>{{menu.text}}</strong>.<strong>{{menu.date}}</strong>.
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
